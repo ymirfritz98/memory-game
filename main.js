@@ -34,7 +34,7 @@ function showIcons() {
     blocks.forEach((block) => {
       block.classList.remove("is-flipped");
     });
-  }, 4000);
+  }, 5000);
 }
 
 // effect duration
@@ -135,7 +135,7 @@ function checkMatchedBlocks(firstBlock, secondBlock) {
     document.getElementById("fail").play();
   }
 
-  if (parseInt(triesElement.innerHTML) === 15) {
+  if (parseInt(triesElement.innerHTML) === 20) {
     let lose = document.querySelector(".show-lose");
     lose.classList.add("lose");
     document.querySelector(".show-lose span").innerHTML = "Game Over";
